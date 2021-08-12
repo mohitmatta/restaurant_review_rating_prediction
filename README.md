@@ -211,20 +211,14 @@ Compared against each other, Random Forest model is the best performing model wi
 ## References: 
 
 
-1) Karimi ZandianZ., & KeyvanpourM. R. (2020). SSLBM: A New Fraud Detection Method Based on Semi- Supervised Learning. Computer and Knowledge Engineering, 2(2), 10-18. https://doi.org/10.22067/ cke.v2i2.82152
-2) Ayano, O., & Akinola, S. O. (2017). A multi-algorithm data mining classification approach for bank fraudulent transactions. African Journal of Mathematics and Computer Science Research, 10(1), 5-13 .
-3) Aleskerov, E., Freisleben, B., and Rao, B. CARDWATCH: A neural network based database mining system for credit card fraud detection. 1997. In Proceedings of IEEE/IAFE Conference on Computational Intelligence for Financial Engineering (New York City, NY, USA, March 23--25, 1997). CIFEr'97. IEEE, 220--226. DOI=http://dx.doi.org/10.1109/CIFER.1997.618940
-4) Bansal, M. and Suman. Credit Card Fraud Detection Using Self Organised Map. 2014. International Journal of Information & Computation Technology. 4, 13 (2014), 1343–1348
-5) J. Kingdon, "AI fights money laundering," in IEEE Intelligent Systems, vol. 19, no. 3, pp. 87-89, May- June 2004, doi: 10.1109/MIS.2004.1.
-6) Kou Y, Lu C-TT, Sirwongwattana S, Huang YP, Sinvongwattana S (2004) Survey of fraud detection techniques. In: 2004 IEEE international conference on networking sensing and control, vol 2(3), pp 749– 754
-7) Gao S, Xu D, Wang H, Green P (2009) Knowledge based anti money laundering: a software agent bank
-application. J Knowl Manag 13(2):63–75
-8) Chen Z, Van Khoa LD, Nazir A, Teoh EN, Karupiah EK (2014) Exploration of the effectiveness of
-expectation maximization algorithm for suspicious transaction detection in anti-money laundering. ICOS
-2014–2014 IEEE conference on open systems, pp 145–149
-9) Bhattacharyya S, Jha S, Tharakunnel K, Westland JC (2011) Data mining for credit card fraud: a
-comparative study. Decis Support Syst 50(3):602–613
-10) Lv L-T, Ji N, Zhang J-L (2008) A RBF neural network model for anti-money laundering. In: Wavelet
+[1] M. Anderson and J. Magruder. Learning from the crowd. 2011. 
+[2] E. Cambria, B. Schuller, Y. Xia, and C. Havasi. New avenues in opinion mining and sentiment analysis. IEEE Intelligent Systems, (2):15–21, 2013. 
+[3] M. Fan and M. Khademi. Predicting a business star in yelp from its reviews text alone. arXiv:1401.0864, 2014. [4] Y. Koren. Factorization meets the neighborhood: a multifaceted collaborative filtering model. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining, pages 426–434. ACM, 2008. 
+[5] A. Mueller. A wordcloud in python. Andy’s Computer Vision and Machine Learning Blog, June 2012. 
+[6] A. Ortony, G. L. Clore, and A. Collins. The cognitive structure of emotions. Cambridge university press, 1990. [7] R. A. Stevenson, J. A. Mikels, and T. W. James. Characterization of the affective norms for english words by discrete emotional categories. Behavior Research Methods, 39(4):1020–1024, 2007. 
+[8] M. Woolf. The statistical difference between 1-star and 5-star reviews on yelp. http://minimaxir.com/2014/09/one-star-five-stars/, September 2014.
+[9] Narendra Gupta, Giuseppe Di Fabbrizio, and Patrick Haffner. 2010. Capturing the stars: predicting ratings for service and product reviews. In Proceedings of the NAACL HLT 2010 Workshop on Semantic Search, pages 36–43. Association for Computational Linguistics.
+[10]López Barbosa, R.R., Sánchez-Alonso, S. and Sicilia-Urban, M.A. (2015), "Evaluating hotels rating prediction based on sentiment analysis services", Aslib Journal of Information Management, Vol. 67 No. 4, pp. 392-407. https://doi.org/10.1108/AJIM-01-2015-0004
  
 
 
