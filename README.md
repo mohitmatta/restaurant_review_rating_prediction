@@ -212,12 +212,19 @@ Compared against each other, Random Forest model is the best performing model wi
 
 
 [1] M. Anderson and J. Magruder. Learning from the crowd. 2011. 
+
 [2] E. Cambria, B. Schuller, Y. Xia, and C. Havasi. New avenues in opinion mining and sentiment analysis. IEEE Intelligent Systems, (2):15–21, 2013. 
+
 [3] M. Fan and M. Khademi. Predicting a business star in yelp from its reviews text alone. arXiv:1401.0864, 2014. [4] Y. Koren. Factorization meets the neighborhood: a multifaceted collaborative filtering model. In Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining, pages 426–434. ACM, 2008. 
-[5] A. Mueller. A wordcloud in python. Andy’s Computer Vision and Machine Learning Blog, June 2012. 
+
+[5] A. Mueller. A wordcloud in python. Andy’s Computer Vision and Machine Learning Blog, June 2012.
+
 [6] A. Ortony, G. L. Clore, and A. Collins. The cognitive structure of emotions. Cambridge university press, 1990. [7] R. A. Stevenson, J. A. Mikels, and T. W. James. Characterization of the affective norms for english words by discrete emotional categories. Behavior Research Methods, 39(4):1020–1024, 2007. 
+
 [8] M. Woolf. The statistical difference between 1-star and 5-star reviews on yelp. http://minimaxir.com/2014/09/one-star-five-stars/, September 2014.
+
 [9] Narendra Gupta, Giuseppe Di Fabbrizio, and Patrick Haffner. 2010. Capturing the stars: predicting ratings for service and product reviews. In Proceedings of the NAACL HLT 2010 Workshop on Semantic Search, pages 36–43. Association for Computational Linguistics.
+
 [10]López Barbosa, R.R., Sánchez-Alonso, S. and Sicilia-Urban, M.A. (2015), "Evaluating hotels rating prediction based on sentiment analysis services", Aslib Journal of Information Management, Vol. 67 No. 4, pp. 392-407. https://doi.org/10.1108/AJIM-01-2015-0004
  
 
