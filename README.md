@@ -5,7 +5,7 @@ Restaurant Review Ratings Prediction
 
 <a href="https://mohitmatta.github.io/">Click here to go back to Portfolio Website </a>
 
-![A remote image](https://github.com/mohitmatta/AML-Fraud-Transactions-Detection/blob/3144ff2db53fee08ce0af4f8149e4c8b7220a245/results/fraud_detection.jpeg)
+![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/9e7a1ab704cf93754d491b9486f45ac33bba30d5/results/images.jpeg)
 
 
 ## Abstract: 
