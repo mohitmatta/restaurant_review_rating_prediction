@@ -10,59 +10,95 @@ Restaurant Review Ratings Prediction
 
 ## Abstract: 
 
-With the recent rise in credit card usage as well as issuance of credit cards to customers, it has become increasingly important for financial institutions to curb the threat of fraudulent transactions and identity theft. Both modes of Credit cards usage(online and offline), although equally convenient, come with great risk.A little information about credit card(16 digit number) is required and sufficient to make a purchase , it can pose some risk of fraud as well. Fraud transaction detection systems can detect the transactions with great accuracy but most of them work after the transaction has occurred. It is important to analyze millions of transactions to identify the fraud pattern so that for future transactions we can detect it on spot and it can save millions of dollars to financial companies as well as customers.
+In recent years, abundant online review data has become available for analysis through different websites connecting customers and businesses. Many websites allow users to post online reviews and share their experiences about the food restaurants. The wealth of information hidden behind the online review data can help the restaurant business and startups to set up defining goals to improve the revenue. A large amount of plain text data that customers have posted can help on sustainability and companies can come up with a sustainable marketing strategy to understand and meet diverse customer demands and maintain competitive advantages. This case study can help restaurants to determine how well they are performing as well as improve customer satisfaction.
 
 
 ### Problem Statement
 
-Banks use a lot of traditional rule based systems to detect frauds but they create too many false positives that sometimes impact the customers adversely.Many of the global banks want to move away from traditional rule based engines towards predictive machine learning based monitoring systems for credit card transactions as well as other bank transfer operations involving money.The Global Digital Payment Market size is expected to reach $175.8 billion by 2026, rising at a market growth of 20% . As the transactions are supposed to be rising in future, banks need to equip themselves to better protect against frauds.Banks have a difficult task to look for a fraud transaction among millions of daily transactions.Due to rise and increase in amount of data, its becoming difficult day by day for humans to detect patterns arising from fraud transactions. Thats why machine learning techniques are becoming popular and are widely being used for fraud detection where information extraction is required from large datasets.
-
+Users also try to convey hidden emotions and linguist styles through textual review comments that are often ignored since the performance is always measured in numerical factors like ratings. Sometimes the relationship between ratings and reviews is not obvious and users just look at the rating and decide to go ahead with the restaurants.
+Review rating prediction has great importance because the users can decide whether to look at the textual reviews or ignore them. The review comment given by two different users can lead to different ratings because the reason for the online reviews for the users will be different. The online data related to reviews is increasing at a very high rate. Yelp recommendation website data has increased with an annual rate of 9% from 2009 to 2020 with a total of around 224 million reviews. This project will not only inform what factors matter most for the customers but also tells what features the new restaurant should focus on in order to successfully run it.
 
 ### Methods used in my project
 
-Importing and basic cleaning and preprocessing of dataset was performed.The variables were examined to see the correlation.The data This is a classification problem to predict the fraud transactions, so we selected different classification models accordingly. With the objective being to provide a classification of fraud transactions, a predictive model was determined to be the best candidate. With the Exploratory Data Analysis, the data revealed that it was best to build advanced Data Science and Machine Learning models to identify and predict potentially suspicious transactions.With those two considerations, the models that were considered were Logistic Regression model, Random Forest,Gradient Boost model, Decision Tree and Neural deep learning algorithms.
+Data was processed, cleaned and transformed using python scripts. After separating the restaurant businesses from rest, when data was explored it was found that reviews text field is in free form text format.Customers use different cases , grammatically incorrect words , punctuation marks and slang words in the review. They may use different words for expressing their likes or dislikes.Stop words are used very frequently by users which are not needed for machine learning models for analysis.So standard natural language processing techniques were used to convert all cases to lowercase , to remove punctuation, to remove stop words and apply porter stemmer to convert the sentences to stemmed sentences.
+
+We used different feature extraction methods based on semantic analysis to extract useful features from the review corpus and built a feature vector for each review. Both unigram and bigram methods were used for the study. We used count vectorizer objects, word level TF-IDF(Term Frequency-Inverse Document Frequency) objects , n-gram level vectorizer objects and Character level vectorizer objects for vector representation of review text. Count vectorizer and TF-IDf vectorizer create a dictionary of words from review dataset and consider each unique word as a feature.Once the frequency of each word is obtained TFIDF weighing technique creates the final feature matrix.It adds high weights to words that are rarely occurring in the text and less weight to words that are frequently occurring. Bigram models gives better results compared to count vectorizers because it considers the relationship between two words. So when TFIDF weighing technique is applied on the text , more importance is given to combination of words like ‘delicious food’ and ‘coming back’ compared to single and more common occurrences.
+Supervised Learning
+To train our prediction models, we use four supervised learning algorithms.
+
+Logistic Regression 
+The logistic regression model predicts the conditional probability using the feature vectors and decides the class labels. The results that give the highest probability are mapped to the output as the final rating for the review.
+
+Naive Bayes Classification
+A Naive Bayes classification works on the basis of the Naive Bayes theorem of independent assumption between the features. It also works on conditional probability and constructs a classifier based on the probability model.
+
+Linear Support Vector Classification (SVC) 
+In the SVM technique, we select the best hyperplane (decision boundary) from the data points and separates the labels. We are using linear SVM techniques where data is linearly separable. It is also known as a discriminative classifier. It also uses the Kernel trick for non-linear classification.
+
+Gradient Boost Classification
+Gradient Boost classification uses ensemble techniques which works on the principle that a collection of predictors(weak or strong) works better than individual predictors. In the Boost technique, the weak learners are converted into strong learners. The model tries to minimize the overall error of the strong learners.
+Neural Network Classification
+A neural network has the weight, score function, and loss function as the main components. It learns in a feedback loop. It adjusts the weight based on results from score function and loss function. The architecture of a neural network has an input layer, hidden layer, and output layers. The neural network calculates, tests, calculates again, tests again, and repeats until the optimum and accurate solution is reached.
+
+Word2Vec Gradient Boost Classification              
+Word2vec works on the idea of distributional semantics which means that we can understand the meaning of a word by understanding the context that a word keeps. It was developed to overcome the shortcomings of one-hot encoding. With the increase in word's vector dimensions,  the relationship between words can be explained in detail.For example, if we have words like apple, mango, and element word2vec model will create features like is_fruit, is_eatable and is_animal. Fruits apple and mango will have the same context for is_fruit and is_animal but less contextual similarity for is_animal.
+
+Accuracy, precision, and recall statistics were produced to determine the overall performance of each model.  
+
+
 
 ### Project Dataset:
 
-##FraudTrain.csv
-- Type:		CSV
-- Columns: 	23
-- Rows:		1296675
+##yelp_business.json
+- Type:		JSON
+- Columns: 	13
+- Rows:		11537
 
-##FraudTest.csv
-- Type:		CSV
-- Columns: 	23
-- Rows:		555719
+##yelp_reviews.json
+- Type:		JSON
+- Columns:  8
+- Rows:	229907
 
+##yelp_users.json
+- Type:		JSON
+- Columns:  6
+- Rows:	43873
+- 
 ## Included Project Variables / Factors 
 
  | Feature / Factors | Definition | Type |
  | --------- | --------- | ---------- |
-|row_id| record sequence| number|
-|trans_date_trans_time| Timestamp of transaction| timestamp|
-|cc_num| Credit Card Number|integer|
-|Merchant| Merchant Name | Char|
-|Category| Merchant Category | Char|
-|amt |Transaction Amount| Decimal|
-|First | First Name of customer|Char|
-|last | Last Name of customer |Char|
-|gender | Gender of customer |Char|
-|street | Street address of customer|Char|
-|city | City of customer| Char|
-|state | State of customer | Char|
-|Zip | Postal zip of customer | Int|
-|Lat | Latitude coordinates of customer| Int|
-|Long | Longitude coordinates of customer |Int|
-|city_pop | city point of purchase- area in which marketers and retailers planned promotional activities surrounding the consumer products | Int|
-|Job | Job name |Char|
-|Dob | Date of Birth |Char|
-|trans_num | Unique transaction Number|Int|
-|unix_time | Unix format time of purchase|Int|
-|mrch_lat | Merchant latitude location |Int|
-|mrch_long | Merchant longitude location |Int| 
-|is_fraud | 0 for non fraud transaction and 1 for fraud transaction|Int|
+|business_id| 22 character unique string business id| string|
+|name| the business's name| string|
+|address| the full address of the business|string|
+|city|the city | string|
+|state| 2 character state code| string|
+|postal code |the postal code| string|
+|latitude | latitude|float|
+|longitude | longitude|float|
+|stars | star rating, rounded to half-stars |float|
+|review_count | number of reviews|integer|
+|is_open |  0 or 1 for closed or open, respectively| integer|
+|attributes | business attributes to values | object|
+|categories | an array of strings of business categories | object|
+|hours | an object of key day to value hours, hours are using a 24hr clock| object|
 
- 
+
+
+| Feature / Factors | Definition | Type |
+ | --------- | --------- | ---------- |
+|review_id| 22 character unique review id| string|
+|user_id| 22 character unique user id, maps to the user in user.json| string|
+|business_id| 22 character business id, maps to business in business.json|string|
+|stars|star rating | integer|
+|date|  date formatted YYYY-MM-DD| string|
+|text |the review itself| string|
+|useful |  number of useful votes received|integer|
+|funny | number of funny votes received|integer|
+|cool | number of cool votes received |integer|
+
+
+
  
 
 ## Pythonic Libraries Used in this project
@@ -91,23 +127,23 @@ Package               Version
 
 | File Name  | Description |
 | ------ | ------ |
-| MOHIT_MATTA_DSC680_AML_Fraud_detection.py | EDA/Model building |
+| restaurant_review_rating_prediction.py | EDA/Model building |
 
 
 
 ## Datasets
 | File  | Description |
 | ------ | ------ |
-| fraudTrain.csv | Kaggle Link- https://www.kaggle.com/kartik2112/fraud-detection/download| 
-| fraudTest.csv | Kaggle Link- https://www.kaggle.com/kartik2112/fraud-detection/download| 
+| yelp_training_set_business.json | Kaggle Link- https://www.kaggle.com/c/yelp-recsys-2013/data#:~:text=get_app-,Download,-All |
+| yelp_training_set_review.json | Kaggle Link- https://www.kaggle.com/c/yelp-recsys-2013/data#:~:text=get_app-,Download,-All | 
 
 
 
 ## Sequence of programs for execution
 
 
-1) Download tha Credit card transactions dataset from Kaggle Link  https://www.kaggle.com/kartik2112/fraud-detection/download
-2) Run MOHIT_MATTA_DSC680_AML_Fraud_detection.py that will perform EDA,build and execute the Models
+1) Download tha Yelp review , Phoenix,AZ dataset from Kaggle Link  https://www.kaggle.com/c/yelp-recsys-2013/data#:~:text=get_app-,Download,-All 
+2) Run restaurant_review_rating_prediction.py that will perform EDA,build and execute the Models
 
 
 
