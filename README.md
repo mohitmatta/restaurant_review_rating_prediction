@@ -152,24 +152,25 @@ Package               Version
 
 ### EDA
 
-### Transaction amount distribution for Fraud and Non Fraud Transaction types
+### Top 25 words in the review text
 
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res5.jpg)
+
+### Boxplot for average word count for positive, negative and neutral review
+
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res3.jpg)
 
-### Transaction count of Fraud vs Non Fraud types for each category
-
+### Word Cloud 
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res2.jpg)
 
-
-### Top 20 locations with highest number of Fraud Transactions 
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res1.jpg)
 
 
-### Transaction count of Fraud vs Non Fraud types for each day of month
+### Map locations of top 25 highest rated restaurants 
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res6.jpg)
 
-### Transaction count of Fraud vs Non Fraud types for each gender
+### Cosine similarity graph for most similar words for positive and negative words 
+
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/f11769187a953ab976abc30629e3040deded1440/results/res4.jpg)
 
 
@@ -197,7 +198,7 @@ Package               Version
 
 ![A remote image](https://github.com/mohitmatta/restaurant_review_rating_prediction/blob/4df2501f54f5c3cdbe14e211c29de1fd20f3e0a3/results/res20.jpg)
 
-Compared against each other, Random Forest model is the best performing model with highest accuracy of 99.9%.
+Compared against each other,word level -TFIDF Logistic regression classifier has the maximum accuracy of 56.5%.
 
 
 
